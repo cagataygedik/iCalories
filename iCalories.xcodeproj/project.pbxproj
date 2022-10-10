@@ -11,6 +11,11 @@
 		A2C7430D28F47FF000E8D035 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C7430C28F47FF000E8D035 /* ContentView.swift */; };
 		A2C7430F28F47FF100E8D035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2C7430E28F47FF100E8D035 /* Assets.xcassets */; };
 		A2C7431228F47FF100E8D035 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2C7431128F47FF100E8D035 /* Preview Assets.xcassets */; };
+		A2C7431B28F4805E00E8D035 /* FoodModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2C7431928F4805E00E8D035 /* FoodModel.xcdatamodeld */; };
+		A2C7431D28F480F000E8D035 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C7431C28F480F000E8D035 /* DataController.swift */; };
+		A2C7432128F4856C00E8D035 /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C7432028F4856C00E8D035 /* AddFoodView.swift */; };
+		A2C7432328F488A100E8D035 /* TimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C7432228F488A100E8D035 /* TimeFormatting.swift */; };
+		A2C7432728F4919900E8D035 /* EditFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C7432628F4919900E8D035 /* EditFoodView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		A2C7430C28F47FF000E8D035 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A2C7430E28F47FF100E8D035 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2C7431128F47FF100E8D035 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A2C7431A28F4805E00E8D035 /* FoodModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodModel.xcdatamodel; sourceTree = "<group>"; };
+		A2C7431C28F480F000E8D035 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		A2C7432028F4856C00E8D035 /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
+		A2C7432228F488A100E8D035 /* TimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatting.swift; sourceTree = "<group>"; };
+		A2C7432628F4919900E8D035 /* EditFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFoodView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				A2C7430A28F47FF000E8D035 /* iCaloriesApp.swift */,
-				A2C7430C28F47FF000E8D035 /* ContentView.swift */,
+				A2C7431F28F4852600E8D035 /* Helpers */,
+				A2C7431E28F4851E00E8D035 /* Views */,
+				A2C7431828F4804100E8D035 /* DataModel */,
 				A2C7430E28F47FF100E8D035 /* Assets.xcassets */,
 				A2C7431028F47FF100E8D035 /* Preview Content */,
 			);
@@ -65,6 +77,33 @@
 				A2C7431128F47FF100E8D035 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A2C7431828F4804100E8D035 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				A2C7431928F4805E00E8D035 /* FoodModel.xcdatamodeld */,
+				A2C7431C28F480F000E8D035 /* DataController.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		A2C7431E28F4851E00E8D035 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A2C7430C28F47FF000E8D035 /* ContentView.swift */,
+				A2C7432028F4856C00E8D035 /* AddFoodView.swift */,
+				A2C7432628F4919900E8D035 /* EditFoodView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A2C7431F28F4852600E8D035 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A2C7432228F488A100E8D035 /* TimeFormatting.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2C7432128F4856C00E8D035 /* AddFoodView.swift in Sources */,
 				A2C7430D28F47FF000E8D035 /* ContentView.swift in Sources */,
+				A2C7431D28F480F000E8D035 /* DataController.swift in Sources */,
 				A2C7430B28F47FF000E8D035 /* iCaloriesApp.swift in Sources */,
+				A2C7431B28F4805E00E8D035 /* FoodModel.xcdatamodeld in Sources */,
+				A2C7432728F4919900E8D035 /* EditFoodView.swift in Sources */,
+				A2C7432328F488A100E8D035 /* TimeFormatting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +383,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A2C7431928F4805E00E8D035 /* FoodModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A2C7431A28F4805E00E8D035 /* FoodModel.xcdatamodel */,
+			);
+			currentVersion = A2C7431A28F4805E00E8D035 /* FoodModel.xcdatamodel */;
+			path = FoodModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A2C742FF28F47FF000E8D035 /* Project object */;
 }
